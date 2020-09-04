@@ -1,0 +1,33 @@
+AAR
+lost the original code, reminder, copy before the final submit
+use inbuilt functions ie list.count instead of wrting yourself
+the task explicitly said that there is only one odd count, I cycled through the whole list even if I found it
+
+hint past solutions, ZAT blindness
+
+first iteration too much writing, the sketch was okayish
+
+def find_it(seq):
+    numCount = []
+    numIndex = []
+    oddNum = ""
+    #check if num is in index, count++ if it is, add if it isn't
+    for i in seq:
+        isInIndex = False
+        for j in numIndex:
+            if(i==j):
+                temp = numIndex.index(i)
+                numCount[temp] += 1
+                isInIndex = True
+                break
+        if(isInIndex==False):
+            numIndex.append(i)
+            numCount.append(1)
+    #find odd count in the numbersCount
+    for i in numCount:
+        if i%2 == 1:
+            temp = numCount.index(i)
+            oddNum = numIndex[temp]
+            break
+    return oddNum
+    
