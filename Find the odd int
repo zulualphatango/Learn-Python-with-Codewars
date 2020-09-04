@@ -31,3 +31,13 @@ def find_it(seq):
             break
     return oddNum
     
+    second iteration based on "best practices" at codewars
+    using inbuilt count cleans most of the mess, even I can read it so that's also check
+    
+    def find_it(seq):
+    for i in seq:
+        if(seq.count(i)%2==1):
+            return i
+        
+I guess I can learn the ropes at least here
+    
