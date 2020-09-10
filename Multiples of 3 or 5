@@ -8,8 +8,16 @@ get dividable by 15(3 AND 5) only once
 get sum of these numbers
 return 0 if num<0
 
+use for loops to iterate with %3==0, %5==0, latter include %15==0 check, don't add if it's true
+ifelse for num<0 check
+
 code
+'''return the sum of numbers below input num that are dividable by 3 or 5 (3 AND 5 only counts once)
+return 0 if num<0'''
+
 if(num>0):
-code
+#div3==0?
+for nums in num:
+  
 else
   return 0
