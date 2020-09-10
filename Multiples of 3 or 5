@@ -47,4 +47,4 @@ return 0 if num<0'''
     else:
         return 0
 
-print(solution(14))
+2nd iteration
