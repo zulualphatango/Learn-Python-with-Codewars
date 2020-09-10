@@ -1,6 +1,15 @@
-aar  
+after action report
+my pythons skills are rusty, thus I make many syntax error -> practice + w3 guides + online IDE
+task is ambiguous, I've tested my understanding with hand, so code should work without errors
+lack of details examples leave only try and error method -> get more information or skip tasks  
 
-notes  
+notes 
+https://docs.python-guide.org/writing/style/
+many typos, syntax errors
+now using online ide instead of text editor
+ide works, mistake in the sketch
+
+sketch
 in num
 check numbers below num
 get ones dividable by 3 or 5 
@@ -8,16 +17,32 @@ get dividable by 15(3 AND 5) only once
 get sum of these numbers
 return 0 if num<0
 
+
 use for loops to iterate with %3==0, %5==0, latter include %15==0 check, don't add if it's true
 ifelse for num<0 check
 
 code
-'''return the sum of numbers below input num that are dividable by 3 or 5 (3 AND 5 only counts once)
-return 0 if num<0'''
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
 
-if(num>0):
-#div3==0?
-for nums in num:
-  
-else
-  return 0
+def solution(number):
+    '''return the sum of numbers below input num that are dividable by 3 or 5 (3 AND 5 only counts once)
+return 0 if num<0'''
+    if(number>0):
+        sum = 0   
+    #div3==0?
+        for nums in range(number-1):
+            #print(nums)
+            if(nums%3==0):
+                sum += nums
+            if(nums%5==0):
+                #exclude double counting %3*5==0
+                if(nums%(3*5)==0):
+                    continue
+                sum += nums
+            #print(sum)
+        return sum
+    else:
+        return 0
+
+print(solution(14))
