@@ -1,0 +1,15 @@
+aar  
+
+notes  
+in num
+check numbers below num
+get ones dividable by 3 or 5 
+get dividable by 15(3 AND 5) only once
+get sum of these numbers
+return 0 if num<0
+
+code
+if(num>0):
+code
+else
+  return 0
