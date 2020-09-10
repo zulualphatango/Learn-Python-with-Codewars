@@ -41,7 +41,8 @@ return 0 if num<0'''
                 #exclude double counting %3*5==0
                 if(nums%(3*5)==0):
                     continue
-                sum += nums
+                else:
+                    sum += nums
             #print(sum)
         return sum
     else:
